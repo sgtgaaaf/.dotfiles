@@ -1,10 +1,9 @@
 
--- template : vim.keymap.set("mode", "new key", "desired-function", { desc = " for the whichkey "})
--- template-blank : vim.keymap.set("n", "", "<>", { desc = "  "})
---
+-- template : map.set("mode", "new key", "desired-function", { desc = " for the whichkey "})
+-- template-blank : map.set("n", "", "<>", { desc = "  "})
+
 vim.g.mapleader = " "
 local map = vim.keymap
-
 
 -- custom keymaps
 map.set('i','jk','<ESC>')
@@ -18,12 +17,12 @@ map.set("n","<bs>", "^")
 map.set("n","<esc><esc>", ":nohlsearch<cr>")
 map.set("n","<bs>", "^")
 -- Copy to system clipboard
-vim.keymap.set("n", "<leader>y", '"+y')
-vim.keymap.set("v", "<leader>y", '"+y<esc>')
+map.set("n", "<leader>y", '"+y')
+map.set("v", "<leader>y", '"+y<esc>')
 -- Insert mode shortcuts
-vim.keymap.set("i", "<c-h>", "<c-g><esc><S-i>")
-vim.keymap.set("i", "<c-;>", "<c-g><esc><s-a>;")
-vim.keymap.set("i", "<c-o>", "<c-g><esc>la")
+map.set("i", "<c-h>", "<esc><S-i>")
+map.set("i", "<c-;>", "<esc><s-a>;")
+map.set("i", "<c-o>", "<esc>la")
 
 map.set("n", "<c-h>","<c-w>h")
 map.set("n", "<c-j>","<c-w>j")
