@@ -10,4 +10,4 @@ opt.autoindent = true
 
 opt.ignorecase=true
 opt.incsearch=true
-opt.scrolloff=5
+opt.scrolloff=12
