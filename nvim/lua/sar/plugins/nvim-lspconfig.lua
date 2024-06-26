@@ -8,9 +8,13 @@ return {
       -- MASON
       require("mason").setup()
       -- MASON-LSPCONFIG
-      require("mason-lspconfig").setup()
+      require("mason-lspconfig").setup({
+         ensure_installed = {
+            "tsserver",
+            "lua_ls",
+         },
+      })
 
-      require("lspconfig").tsserver.setup()
       require("lspconfig").lua_ls.setup({
          settings = {
             Lua = {
@@ -22,6 +26,7 @@ return {
             },
          },
       })
+      require("lspconfig").tsserver.setup({})
 
       local map = vim.keymap
       -- Jump to the definition of the word under your cursor.
