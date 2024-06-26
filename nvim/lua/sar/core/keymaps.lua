@@ -16,7 +16,7 @@ map.set('n', '<C-s>', vim.cmd.w )
 map.set('v','J',":m '>+1<CR>gv=gv")
 map.set('v','K',":m '<-2<CR>gv=gv")
 map.set("n","<bs>", "^")
-map.set("n","<esc><esc>", ":nohlsearch<cr>")
+map.set("n","<esc><esc><esc>", ":nohlsearch<cr>")
 map.set("n","<bs>", "^")
 -- Copy to system clipboard
 map.set("n", "<leader>y", '"+y')

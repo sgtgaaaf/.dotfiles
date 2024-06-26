@@ -5,6 +5,7 @@ return {
          formatter_by_ft = {
             lua = { "stylua" },
             java = { "prettier" },
+            ts = { "prettier" },
          },
       })
       vim.keymap.set("n", "<leader>mp", function()

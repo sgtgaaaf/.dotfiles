@@ -11,3 +11,5 @@ opt.autoindent = true
 opt.ignorecase=true
 opt.incsearch=true
 opt.scrolloff=12
+
+-- opt.path:append()**

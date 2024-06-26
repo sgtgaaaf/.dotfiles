@@ -7,9 +7,10 @@ return {
    config = function()
       -- MASON
       require("mason").setup()
+      -- MASON-LSPCONFIG
       require("mason-lspconfig").setup()
 
-      -- MASON-LSPCONFIG
+      require("lspconfig").tsserver.setup()
       require("lspconfig").lua_ls.setup({
          settings = {
             Lua = {
