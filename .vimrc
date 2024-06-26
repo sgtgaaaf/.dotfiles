@@ -1,4 +1,3 @@
-
 set scrolloff=5                                   "scrolloff at some value
 
 set incsearch                                     " Do incremental searching.
@@ -16,8 +15,10 @@ filetype indent on
 
 let mapleader=' '
 
+nnoremap dr d$
 nnoremap <bs> ^
 inoremap jk <esc>
+vnoremap jkl <esc>
 nnoremap <leader>ee :Ex<cr>
 nnoremap <C-S> :w<cr> 
 

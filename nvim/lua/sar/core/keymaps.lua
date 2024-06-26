@@ -7,6 +7,8 @@ local map = vim.keymap
 
 -- custom keymaps
 map.set('i','jk','<ESC>')
+map.set('v','jkl','<ESC>')
+map.set('n','dr','d$')
 map.set('n', '<leader>ee', vim.cmd.Ex )
 map.set('n', '<leader>bx', vim.cmd.q )
 map.set('n', 'lz', vim.cmd.q )
