@@ -11,6 +11,7 @@ set number
 set relativenumber
 set colorcolumn=120
 set hlsearch
+
 filetype on
 filetype indent on
 

@@ -1,4 +1,3 @@
-
 -- template : map.set("mode", "new key", "desired-function", { desc = " for the whichkey "})
 -- template-blank : map.set("n", "", "<>", { desc = "  "})
 
@@ -11,7 +10,6 @@ map.set('v','uio','<ESC>')
 map.set('n','dr','d$')
 map.set('n', '<leader>ee', vim.cmd.Ex )
 map.set('n', '<leader>bx', vim.cmd.q )
-map.set('n', 'lz', vim.cmd.q )
 map.set('n', '<C-s>', vim.cmd.w )
 map.set("n","<bs>", "^")
 map.set("n","<esc><esc><esc>", ":nohlsearch<cr>")
