@@ -1,7 +1,7 @@
 local opt             = vim.opt
 
 vim.g.netrw_banner    = 0
-vim.g.netrw_liststyle = 3
+vim.g.netrw_liststyle = 0
 
 opt.number            = true
 opt.relativenumber    = true

@@ -58,8 +58,8 @@ return {
                'filename',
             },
             lualine_c = {},
-            lualine_x = {},
-            lualine_y = { "branch", "diff", "diagnostics" },
+            lualine_x = { "diagnostics" },
+            lualine_y = { "branch", "diff"},
             lualine_z = {},
          },
          inactive_winbar = {

@@ -27,7 +27,7 @@ return {
          },
       })
       require("lspconfig").tsserver.setup({})
-      require("lspconfig").jdtls.setup({})
+      -- require("lspconfig").jdtls.setup({})
 
       local map = vim.keymap
       -- Jump to the definition of the word under your cursor.
