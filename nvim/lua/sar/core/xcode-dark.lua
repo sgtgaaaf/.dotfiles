@@ -19,12 +19,12 @@ local theme = {
 	fg_alt = "#5B6268",
 
 	Color1 = "#FC6A5D", --string
-	Color2 = "#FC5FA3", --keyword
+	keywordPinkColor2 = "#FC5FA3", --keyword
 	Color3 = "#D0A8FF", --annotation
-	Color4 = "#67B7A4", --Identifier
+	flatGreenColor4 = "#67B7A4", --Identifier
 	Color5 = "#FFFFFF",
 	Color6 = "#5482FF",
-	Color7 = "#41A1C0",
+	flatBlueColor7 = "#41A1C0",
 	Color8 = "#A9B7C6",
 	Color9 = "#A167E6",
 	Color10 = "#6C7986",
@@ -92,7 +92,7 @@ local syntax = {
 	CursorColumn = { bg = theme.bg_highlight },
 	CursorLine = { bg = theme.bg_highlight },
 	LineNr = { fg = theme.base4 },
-	qfLineNr = { fg = theme.Color4 },
+	qfLineNr = { fg = theme.flatGreenColor4 },
 	CursorLineNr = { fg = theme.Color6 },
 	DiffAdd = { fg = theme.black, bg = theme.dark_green },
 	DiffChange = { fg = theme.black, bg = theme.yellow },
@@ -120,7 +120,7 @@ local syntax = {
 	TabLineSel = { fg = theme.fg, bg = theme.blue },
 	SpellBad = { fg = theme.red, bg = theme.none, undercurl = true },
 	SpellCap = { fg = theme.blue, bg = theme.none, undercurl = true },
-	SpellLocal = { fg = theme.Color4, bg = theme.none, undercurl = true },
+	SpellLocal = { fg = theme.flatGreenColor4, bg = theme.none, undercurl = true },
 	SpellRare = { fg = theme.violet, bg = theme.none, undercurl = true },
 	Visual = { fg = theme.black, bg = theme.bg_visual },
 	VisualNOS = { fg = theme.black, bg = theme.bg_visual },
@@ -128,7 +128,7 @@ local syntax = {
 	Debug = { fg = theme.orange },
 	debugBreakpoint = { fg = theme.bg, bg = theme.red },
 
-	Boolean = { fg = theme.Color2 },
+	Boolean = { fg = theme.keywordPinkColor2 },
 	Number = { fg = theme.yellownumber },
 	Float = { fg = theme.yellow },
 	PreProc = { fg = theme.violet },
@@ -137,8 +137,8 @@ local syntax = {
 	Define = { fg = theme.violet },
 	Conditional = { fg = theme.Color5 },
 	Repeat = { fg = theme.Color5 },
-	Keyword = { fg = theme.Color2, bold = true },
-	Typedef = { fg = theme.Color2, bold = true },
+	Keyword = { fg = theme.keywordPinkColor2, bold = true },
+	Typedef = { fg = theme.keywordPinkColor2, bold = true },
 	Exception = { fg = theme.red },
 	Statement = { fg = theme.red },
 	Error = { fg = theme.red },
@@ -148,14 +148,14 @@ local syntax = {
 	Structure = { fg = theme.structureblue },
 	Operator = { fg = theme.Color5 },
 	Title = { fg = theme.orange, bold = true },
-	Special = { fg = theme.Color4 },
-	SpecialChar = { fg = theme.Color4 },
+	Special = { fg = theme.flatGreenColor4 },
+	SpecialChar = { fg = theme.flatGreenColor4 },
 	Type = { fg = theme.classblue, bold = true },
-	Function = { fg = theme.Color4 },
+	Function = { fg = theme.flatGreenColor4 },
 	String = { fg = theme.Color1 },
-	Character = { fg = theme.Color2, bold = true },
+	Character = { fg = theme.keywordPinkColor2, bold = true },
 	Constant = { fg = theme.Color5 },
-	Macro = { fg = theme.Color4 },
+	Macro = { fg = theme.flatGreenColor4 },
 	Identifier = { fg = theme.blue },
 
 	Comment = { fg = theme.Color10 },
@@ -173,13 +173,13 @@ local syntax = {
 }
 
 local plugin_syntax = {
-	["@function"] = { fg = theme.Color7 },
-	["@function.call"] = { fg = theme.Color4 },
-	["@function.builtin"] = { fg = theme.Color4 },
-	["@function.macro"] = { fg = theme.Color4 },
-	["@function.method"] = { fg = theme.Color7 },
-	["@function.method.call"] = { fg = theme.Color4 },
-	["@keyword"] = { fg = theme.Color2, bold = true },
+	["@function"] = { fg = theme.flatBlueColor7 },
+	["@function.call"] = { fg = theme.flatGreenColor4 },
+	["@function.builtin"] = { fg = theme.flatGreenColor4 },
+	["@function.macro"] = { fg = theme.flatGreenColor4 },
+	["@function.method"] = { fg = theme.flatBlueColor7 },
+	["@function.method.call"] = { fg = theme.flatGreenColor4 },
+	["@keyword"] = { fg = theme.keywordPinkColor2, bold = true },
 	["@property"] = { fg = theme.purple },
 	["@type"] = { fg = theme.classblue },
 	["@type.builtin"] = { fg = theme.Color9 },
@@ -187,13 +187,13 @@ local plugin_syntax = {
 	["@punctuation.bracket"] = { fg = theme.Color5 },
 	["@attribute"] = { fg = theme.Color3 },
 	["@variable.parameter"] = { fg = theme.Color8 },
-	["@variable.builtin"] = { fg = theme.Color2 },
+	["@variable.builtin"] = { fg = theme.keywordPinkColor2 },
 	["@spell"] = { fg = theme.Color10 },
 
 	vimCommentTitle = { fg = theme.grey, bold = true },
 	vimLet = { fg = theme.orange },
 	vimVar = { fg = theme.cyan },
-	vimFunction = { fg = theme.Color2 },
+	vimFunction = { fg = theme.keywordPinkColor2 },
 	vimIsCommand = { fg = theme.fg },
 	vimCommand = { fg = theme.blue },
 	vimNotFunc = { fg = theme.violet, bold = true },
@@ -300,7 +300,7 @@ local plugin_syntax = {
 	CmpItemKindMethod = { fg = theme.teal },
 	CmpItemKindKeyWord = { fg = theme.red },
 	CmpItemKindText = { fg = theme.light_green },
-	CmpItemKindModule = { fg = theme.Color4 },
+	CmpItemKindModule = { fg = theme.flatGreenColor4 },
 
 	-- Neogit
 	NeogitDiffAddHighlight = { fg = theme.green },

@@ -3,6 +3,7 @@ return {
    dependencies = {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
+      "mfussenegger/nvim-jdtls",
    },
    config = function()
       -- MASON
@@ -12,6 +13,7 @@ return {
          ensure_installed = {
             "tsserver",
             "lua_ls",
+            "jdtls",
          },
       })
 
@@ -19,14 +21,13 @@ return {
          settings = {
             Lua = {
                diagnostics = {
-                  -- Get the language server to recognize the `vim` global
-                  { disable = { 'missing-fields' } },
-                  globals = { 'vim' },
+                  globals = { "vim" },
                },
             },
          },
       })
       require("lspconfig").tsserver.setup({})
+      require("lspconfig").jdtls.setup({})
 
       local map = vim.keymap
       -- Jump to the definition of the word under your cursor.
@@ -62,7 +63,7 @@ return {
       -- or a suggestion from your LSP for this to activate.
       map.set("n", '<leader>ca', vim.lsp.buf.code_action)
 
-      -- Opens a popup that displays documentation about the word under your cursor
+      -- Opens a pop-up that displays documentation about the word under your cursor
       --  See `:help K` for why this keymap.set.
       map.set("n", 'K', vim.lsp.buf.hover)
 

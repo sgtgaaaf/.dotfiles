@@ -1,19 +1,23 @@
-local opt = vim.opt
-opt.number = true
-opt.relativenumber = true
+local opt             = vim.opt
 
-opt.tabstop = 3
-opt.shiftwidth = 3
-opt.expandtab = true
-opt.autoindent = true
+vim.g.netrw_banner    = 0
+vim.g.netrw_liststyle = 3
 
-opt.colorcolumn="120"
+opt.number            = true
+opt.relativenumber    = true
+opt.expandtab         = true
+opt.autoindent        = true
+opt.ignorecase        = true
+opt.incsearch         = true
+opt.spell             = true
 
-opt.ignorecase=true
-opt.incsearch=true
-opt.scrolloff=12
-opt.cmdheight=0
+opt.tabstop           = 03
+opt.shiftwidth        = 03
+opt.scrolloff         = 12
+opt.cmdheight         = 00
 
- -- opt.winbar="%m %f%="
+opt.spelllang         = "en_gb"
+opt.colorcolumn       = "120"
 
 opt.path:append("**")
+

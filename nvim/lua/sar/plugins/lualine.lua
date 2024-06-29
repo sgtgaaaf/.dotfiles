@@ -24,7 +24,14 @@ return {
                   -- fmt = function(str) return str:sub("/" ," > ") end
                },
             },
-            lualine_x = { 'location', 'encoding', 'fileformat', },
+            lualine_x = { 'location', 'encoding', {
+               'fileformat',
+               symbols = {
+                  unix = '', -- e712
+                  dos = '', -- e70f
+                  mac = '', -- e711
+               }
+            }, },
             lualine_y = {
                {
                   'filetype',
@@ -45,7 +52,7 @@ return {
             lualine_a = {},
             lualine_b = {
                {
-                  'filename',
+                  'filetype',
                   icon_only = true,
                },
                'filename',
@@ -55,7 +62,6 @@ return {
             lualine_y = { "branch", "diff", "diagnostics" },
             lualine_z = {},
          },
-
          inactive_winbar = {
             lualine_a = {},
             lualine_b = {},
