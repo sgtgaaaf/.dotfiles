@@ -23,7 +23,7 @@ local theme = {
    annotationLightColor3 = "#D0A8FF", --annotation
    flatGreenColor4 = "#67B7A4",       --Identifier
    whiteColor5 = "#FFFFFF",
-   Color6 = "#5482FF",
+   blueColor6 = "#5482FF",
    flatBlueColor7 = "#41A1C0",
    mediumGrayColor8 = "#A9B7C6",
    lavanderColor9 = "#A167E6",
@@ -91,9 +91,10 @@ local syntax = {
    CursorIM = { bg = theme.none, reverse = true },
    CursorColumn = { bg = theme.bg_highlight },
    CursorLine = { bg = theme.bg_highlight },
-   LineNr = { fg = theme.base4 },
+   LineNrAbove = { fg = theme.base6 },
+   LineNrBelow = { fg = theme.base6 },
    qfLineNr = { fg = theme.flatGreenColor4 },
-   CursorLineNr = { fg = theme.Color6 },
+   CursorLineNr = { fg = theme.blueColor6 },
    DiffAdd = { fg = theme.black, bg = theme.dark_green },
    DiffChange = { fg = theme.black, bg = theme.yellow },
    DiffDelete = { fg = theme.black, bg = theme.red },
@@ -335,9 +336,11 @@ function theme.colorscheme()
    vim.o.termguicolors = true
    vim.g.colors_name = "xcode-dark"
    set_hl(syntax)
+   vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7487ce' })
    async_load_plugin:send()
 end
 
 theme.colorscheme()
 
 return theme
+

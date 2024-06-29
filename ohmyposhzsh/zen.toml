@@ -19,7 +19,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
    type = 'path'
    style = 'plain'
    background = 'transparent'
-   foreground = '#3c73a8'
+   foreground = '#3c85a9'
    template = '{{ .Path }}'
 
    [blocks.segments.properties]
