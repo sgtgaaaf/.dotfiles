@@ -1,6 +1,14 @@
 alias run='sh ./run.sh'
 alias la='ls -la'
 alias nv='nvim .'
+alias dot='cd ~/.dotfiles/'
+alias nvconfig='nvim ~/.dotfiles/nvim.'
+alias add='git add .'
+alias pull='git pull'
+alias push='git push'
+alias fetch='git fetch'
+alias status='git status'
+alias commit='git commit -m '
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
 
