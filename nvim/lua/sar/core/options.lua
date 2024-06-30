@@ -11,6 +11,8 @@ opt.ignorecase        = true
 opt.incsearch         = true
 opt.spell             = true
 
+opt.wrap              = false
+
 opt.tabstop           = 03
 opt.shiftwidth        = 03
 opt.scrolloff         = 12
