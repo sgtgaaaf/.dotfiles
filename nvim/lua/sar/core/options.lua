@@ -21,3 +21,5 @@ opt.colorcolumn       = "120"
 
 opt.path:append("**")
 
+-- vim.o.statusline = "%{%v:lua.require'nvim-navic'.get_location()%}"
+-- vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"

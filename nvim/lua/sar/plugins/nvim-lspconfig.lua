@@ -4,6 +4,7 @@ return {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "mfussenegger/nvim-jdtls",
+      "folke/neodev.nvim",
    },
    config = function()
       -- MASON
@@ -17,17 +18,12 @@ return {
          },
       })
 
-      require("lspconfig").lua_ls.setup({
-         settings = {
-            Lua = {
-               diagnostics = {
-                  globals = { "vim" },
-               },
-            },
-         },
-      })
+         -- on_attach = function(client, bufnr)
+         --    crumb.attach(client, bufnr)
+         -- end
+      require("lspconfig").lua_ls.setup({})
       require("lspconfig").tsserver.setup({})
-      -- require("lspconfig").jdtls.setup({})
+      require("lspconfig").jdtls.setup({})
 
       local map = vim.keymap
       -- Jump to the definition of the word under your cursor.

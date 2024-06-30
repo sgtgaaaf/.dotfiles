@@ -6,10 +6,10 @@ local map = vim.keymap
 
 -- custom keymaps
 map.set('i','jk','<ESC>')
-map.set('v','uio','<ESC>')
+map.set('v','oi','<ESC>')
 map.set('n','dr','d$')
--- map.set('n', '<leader>ee', vim.cmd.Ex )
-map.set({'n','i','v'}, '<leader>ee', "<esc>:Lex<cs><esc>:vertical resize 30<cr>" )
+map.set('n', '<leader>ee', vim.cmd.Ex )
+-- map.set({'n','i','v'}, '<leader>ee', "<esc>:Lex<cs><esc>:vertical resize 30<cr>" )
 map.set('n', '<leader>bx', vim.cmd.q )
 map.set('n', '<C-s>', vim.cmd.w )
 map.set("n","<bs>", "^")

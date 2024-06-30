@@ -1,6 +1,8 @@
 return {
    "nvim-lualine/lualine.nvim",
-   dependencies = { "nvim-tree/nvim-web-devicons" },
+   dependencies = {
+      "nvim-tree/nvim-web-devicons",
+   },
    config = function()
       require("lualine").setup({
          options = {
@@ -18,24 +20,34 @@ return {
             lualine_b = {},
             lualine_c = {
                {
-                  "filename",
-                  path = 1,
-                  -- fmt = function(str) return str:sub("\" ," > ") end
-                  -- fmt = function(str) return str:sub("/" ," > ") end
+                  function()
+                     return require("nvim-navic").get_location()
+                  end,
+                  cond = function()
+                     return require("nvim-navic").is_available()
+                  end,
                },
+               -- {
+               --    "filename",
+               --    path = 1,
+               --    -- fmt = function(str) return str:sub("\" ," > ") end
+               --    -- fmt = function(str) return str:sub("/" ," > ") end
+               -- },
             },
-            lualine_x = { 'location', 'encoding', {
-               'fileformat',
-               symbols = {
-                  unix = '', -- e712
-                  dos = '', -- e70f
-                  mac = '', -- e711
-               }
-            }, },
-            lualine_y = {
+            lualine_x = { 'location', 'encoding',
                {
                   'filetype',
                   icon_only = true,
+               }
+            },
+            lualine_y = {
+               {
+                  'fileformat',
+                  symbols = {
+                     unix = '', -- e712
+                     dos = '', -- e70f
+                     mac = '', -- e711
+                  },
                },
             },
             lualine_z = { 'mode' },
@@ -59,7 +71,7 @@ return {
             },
             lualine_c = {},
             lualine_x = { "diagnostics" },
-            lualine_y = { "branch", "diff"},
+            lualine_y = { "branch", "diff" },
             lualine_z = {},
          },
          inactive_winbar = {
