@@ -18,9 +18,7 @@ return {
          },
       })
 
-         -- on_attach = function(client, bufnr)
-         --    crumb.attach(client, bufnr)
-         -- end
+      require("neodev").setup({})
       require("lspconfig").lua_ls.setup({})
       require("lspconfig").tsserver.setup({})
       require("lspconfig").jdtls.setup({})

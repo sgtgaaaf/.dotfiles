@@ -139,7 +139,7 @@ local syntax = {
    Conditional = { fg = theme.whiteColor5 },
    Repeat = { fg = theme.whiteColor5 },
    Keyword = { fg = theme.keywordPinkColor2, bold = true },
-   Typedef = { fg = theme.keywordPinkColor2, bold = true },
+   Typedef = { fg = theme.classblue, bold = true },
    Exception = { fg = theme.red },
    Statement = { fg = theme.red },
    Error = { fg = theme.red },

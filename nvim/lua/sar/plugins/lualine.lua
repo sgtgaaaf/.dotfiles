@@ -20,6 +20,10 @@ return {
             lualine_b = {},
             lualine_c = {
                {
+                  "filename",
+                  path = 1,
+               },
+               {
                   function()
                      return require("nvim-navic").get_location()
                   end,
@@ -27,12 +31,6 @@ return {
                      return require("nvim-navic").is_available()
                   end,
                },
-               -- {
-               --    "filename",
-               --    path = 1,
-               --    -- fmt = function(str) return str:sub("\" ," > ") end
-               --    -- fmt = function(str) return str:sub("/" ," > ") end
-               -- },
             },
             lualine_x = { 'location', 'encoding',
                {
