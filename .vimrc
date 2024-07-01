@@ -20,7 +20,7 @@ let mapleader=' '
 nnoremap dr d$
 nnoremap <bs> ^
 inoremap jk <esc>
-vnoremap uio <esc>
+vnoremap oi <esc>
 nnoremap <leader>ee :Ex<cr>
 nnoremap <C-S> :w<cr> 
 nnoremap + <c-a>hh  
