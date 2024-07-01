@@ -66,10 +66,15 @@ return {
                   icon_only = true,
                },
                'filename',
+               {
+                  "branch",
+                  icons_enabled = false,
+               },
+               "diff",
             },
             lualine_c = {},
             lualine_x = { "diagnostics" },
-            lualine_y = { "branch", "diff" },
+            lualine_y = {},
             lualine_z = {},
          },
          inactive_winbar = {
