@@ -28,7 +28,7 @@ nnoremap - <c-x>hh
 
 "inoremap < <><esc>i
 
-map <esc><esc> :nohlsearch<cr>
+map <esc> :nohlsearch<cr>
 nmap <leader>y \"+y
 vmap <leader>y \"+y<esc>
 
