@@ -19,6 +19,9 @@ return {
                -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
             end,
          },
+         experimental = {
+            ghost_text = true -- this feature conflict with copilot.vim's preview.
+         },
          window = {
             completion = cmp.config.window.bordered(),
             documentation = cmp.config.window.bordered(),
@@ -104,6 +107,9 @@ return {
          capabilities = capabilities
       })
       require("lspconfig")["tsserver"].setup({
+         capabilities = capabilities
+      })
+      require("lspconfig")["jdtls"].setup({
          capabilities = capabilities
       })
    end
