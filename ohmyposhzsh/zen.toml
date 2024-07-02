@@ -12,7 +12,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   [[blocks.segments]]
     foreground = '#8395a7'
     style = 'powerline'
-    template = '{{ if .WSL }}WSL at {{ end }}{{ .Icon }}  '
+    template = '{{ if .WSL }}{{ end }}{{ .Icon }}  '
     type = 'os'
 
  [[blocks.segments]]
