@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
-
+// https://github.com/folke/
+@Deprecated
 class Sarthak {
 
    private static final String JAPAN = "Japan";
@@ -7,6 +8,8 @@ class Sarthak {
 
    public void thisIsCool() {
       frame = new JFrame();
+      String dada = "dada";
+      new String("mama" + dada + JAPAN);
    }
 
    // aslkjfdkl

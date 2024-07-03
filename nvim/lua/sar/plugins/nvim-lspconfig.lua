@@ -21,17 +21,6 @@ return {
       require("neodev").setup({})
       require("lspconfig").lua_ls.setup({})
       require("lspconfig").tsserver.setup({})
-      require("lspconfig").jdtls.setup({
-         settings = {
-            java = {
-               inlayHints = {
-                  parameterNames = {
-                     enabled = "all", -- literals, all, none
-                  },
-               },
-            }
-         }
-      })
 
       local map = vim.keymap
       -- Jump to the definition of the word under your cursor.
