@@ -62,12 +62,12 @@ return {
          --       end, { "i", "s", "c", }),
          -- }),
          sources = cmp.config.sources({
-            { name = "nvim_lsp" },
-            { name = "luasnip" }, -- For luasnip users.
+            { name = "nvim_lsp", keyword_length = 2 },
+            { name = "luasnip", keyword_length = 2 }, -- For luasnip users.
          }, {
-            { name = "buffer" },
-            { name = "path" },
-            { name = "cmdline" },
+            { name = "buffer", keyword_length = 2 },
+            { name = "path", keyword_length = 2 },
+            { name = "cmdline", keyword_length = 2 },
          })
       })
       -- To use git you need to install the plugin petertriho/cmp-git and uncomment lines below
