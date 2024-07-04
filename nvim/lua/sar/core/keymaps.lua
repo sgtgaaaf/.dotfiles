@@ -5,6 +5,7 @@ vim.g.mapleader = " "
 local map = vim.keymap
 
 -- custom keymaps
+map.set("n", "<leader><leader>", vim.cmd.so )
 map.set('i','jk','<ESC>')
 map.set('v','oi','<ESC>')
 map.set('n','dr','d$')
@@ -20,6 +21,8 @@ map.set("n", "-", "<c-x>")
 
 --code manipulation turbo charged
 map.set('v','J',":m '>+1<CR>gv=gv")
+map.set("n", "<leader>h", [[:h <c-r><c-w><cr>]])
+map.set("n", "<leader>g", [[:helpgrep <c-r><c-w><cr>]])
 map.set('v','K',":m '<-2<CR>gv=gv")
 map.set("n", "<leader>o", "ciwtrue<esc>")
 map.set("n", "<leader>z", "ciwfalse<esc>")

@@ -1,4 +1,4 @@
-return {
+return { -- https://www.github.com/neovim/nvim-lspconfig
    "neovim/nvim-lspconfig",
    dependencies = {
       "williamboman/mason.nvim",
@@ -21,6 +21,7 @@ return {
       require("neodev").setup({})
       require("lspconfig").lua_ls.setup({})
       require("lspconfig").tsserver.setup({})
+      -- require("lspconfig").sonarlint.setup({})
 
       local map = vim.keymap
       -- Jump to the definition of the word under your cursor.

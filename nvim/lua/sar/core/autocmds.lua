@@ -15,3 +15,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
       client.server_capabilities.semanticTokensProvider = nil
    end,
 })
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+   callback = function()
+      require("lint").try_lint()
+   end,
+})

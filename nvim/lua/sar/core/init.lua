@@ -1,5 +1,5 @@
 require("sar.core.options")
 require("sar.core.keymaps")
--- require("sar.core.xcode-dark")
-vim.cmd("colorscheme cosmos")
+require("sar.core.xcode-dark")
+-- vim.cmd("colorscheme cosmos")
 require("sar.core.autocmds")

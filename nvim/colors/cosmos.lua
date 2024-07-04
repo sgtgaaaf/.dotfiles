@@ -11,27 +11,12 @@
 -- boolean
 -- sar/core/init.lua#41A1C0
 -- Set the color for strings
-vim.api.nvim_set_hl(0, "@type.definition", { fg = "#Ffffff", bold = true })
-vim.api.nvim_set_hl(0, "@lsp.function.method.call", { fg = "#67b7a4" })
-vim.api.nvim_set_hl(0, "@property", { fg = "#41a1c0", bold = true })
-vim.api.nvim_set_hl(0, "@type.name", { fg = "#0000ff", bold = true })
--- Set the keyword color
-vim.api.nvim_set_hl(0, "Keyword", { fg = "#FC5fA3", bold = true })
--- Set the highlight for static fields
-vim.api.nvim_set_hl(0, "StaticField", { fg = "#A167E6", italic = true })
--- Set the selection colors for normal mode
-vim.api.nvim_set_hl(0, "Visual", { fg = "NONE", bg = "#515B70" })
--- Set the selection colors for visual mode
-vim.api.nvim_set_hl(0, "VisualNOS", { fg = "NONE", bg = "#BBC2CF" })
--- Set the selection colors for insert mode
-vim.api.nvim_set_hl(0, "VisualNOS", { fg = "NONE", bg = "#4CAF50" })
--- experimental
 -- $VIMRUNTIME/syntax/java.vim
 
-vim.api.nvim_set_hl(0, "@type.builtin", { fg = "#FC5fA3", bold = true })
-vim.api.nvim_set_hl(0, "@function", { fg = "#41a1c0" })
-vim.api.nvim_set_hl(0, "@type", { fg = "#FC5fA3", bold = true })
-vim.api.nvim_command("hi clear")
+-- vim.api.nvim_command("hi clear")
+vim.api.nvim_set_hl(0, "@property", { fg = "#41a1c0", bold = true })
+vim.api.nvim_set_hl(0, "Visual", { fg = "NONE", bg = "#515B70" })
+vim.api.nvim_set_hl(0, "VisualNOS", { fg = "NONE", bg = "#BBC2CF" })
 
 
 vim.api.nvim_set_hl(0, "Normal", { bg = "#292A2F", fg = "#FFFFFF" })

@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 // https://github.com/folke/
+
 @Deprecated
 class Sarthak {
 

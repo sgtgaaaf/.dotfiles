@@ -5,6 +5,11 @@ local opt             = vim.opt
 vim.g.netrw_banner    = 0
 vim.g.netrw_liststyle = 0
 
+-- Define custom sign symbols for warnings and errors
+vim.o.termguicolors = true
+vim.o.signcolumn = "yes:2"
+vim.o.foldcolumn = "auto:1"
+
 opt.number            = true
 opt.relativenumber    = true
 opt.expandtab         = true
@@ -13,9 +18,7 @@ opt.ignorecase        = true
 opt.incsearch         = true
 opt.spell             = true
 
-opt.termguicolors     = true
 opt.background        = "dark"
-opt.signcolumn        = "yes"
 
 opt.wrap              = false
 
@@ -25,6 +28,6 @@ opt.scrolloff         = 12
 opt.cmdheight         = 00
 
 opt.spelllang         = "en_gb"
-opt.colorcolumn       = "120"
+-- opt.colorcolumn       = "120"
 
 opt.path:append("**")

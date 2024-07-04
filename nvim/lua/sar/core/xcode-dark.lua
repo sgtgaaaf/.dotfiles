@@ -141,6 +141,7 @@ local syntax = {
    Keyword = { fg = theme.keywordPinkColor2, bold = true },
    Typedef = { fg = theme.keywordPinkColor2, bold = true },
    Exception = { fg = theme.red },
+   Identifier = { fg = theme.flatBlueColor7 },
    Statement = { fg = theme.red },
    Error = { fg = theme.red },
    StorageClass = { fg = theme.orange },
@@ -157,9 +158,9 @@ local syntax = {
    Character = { fg = theme.keywordPinkColor2, bold = true },
    Constant = { fg = theme.whiteColor5 },
    Macro = { fg = theme.flatGreenColor4 },
-   Identifier = { fg = theme.blue },
+   -- Identifier = { fg = theme.blue },
 
-   Comment = { fg = theme.Color10 },
+   Comment = { fg = "#6C7986" },
    SpecialComment = { fg = theme.Color10 },
    Todo = { fg = theme.Color11 },
    Delimiter = { fg = theme.fg },
@@ -171,124 +172,6 @@ local syntax = {
    DashboardCenter = { fg = theme.teal },
    DashboardCenterIcon = { fg = theme.blue },
    DashboardFooter = { fg = theme.yellow, bold = true },
-   vimCommentTitle = { fg = theme.grey, bold = true },
-   vimLet = { fg = theme.orange },
-   vimVar = { fg = theme.cyan },
-   vimFunction = { fg = theme.keywordPinkColor2 },
-   vimIsCommand = { fg = theme.fg },
-   vimCommand = { fg = theme.blue },
-   vimNotFunc = { fg = theme.violet, bold = true },
-   vimUserFunc = { fg = theme.yellow, bold = true },
-   vimFuncName = { fg = theme.yellow, bold = true },
-
-   diffAdded = { fg = theme.dark_green },
-   diffRemoved = { fg = theme.red },
-   diffChanged = { fg = theme.blue },
-   diffOldFile = { fg = theme.yellow },
-   diffNewFile = { fg = theme.orange },
-   diffFile = { fg = theme.cyan },
-   diffLine = { fg = theme.grey },
-   diffIndexLine = { fg = theme.violet },
-
-   gitcommitSummary = { fg = theme.red },
-   gitcommitUntracked = { fg = theme.grey },
-   gitcommitDiscarded = { fg = theme.grey },
-   gitcommitSelected = { fg = theme.grey },
-   gitcommitUnmerged = { fg = theme.grey },
-   gitcommitOnBranch = { fg = theme.grey },
-   gitcommitArrow = { fg = theme.grey },
-   gitcommitFile = { fg = theme.dark_green },
-
-   VistaBracket = { fg = theme.grey },
-   VistaChildrenNr = { fg = theme.orange },
-   VistaKind = { fg = theme.violet },
-   VistaScope = { fg = theme.red },
-   VistaScopeKind = { fg = theme.blue },
-   VistaTag = { fg = theme.magenta, bold = true },
-   VistaPrefix = { fg = theme.grey },
-   VistaColon = { fg = theme.magenta },
-   VistaIcon = { fg = theme.yellow },
-   VistaLineNr = { fg = theme.fg },
-
-   GitGutterAdd = { fg = theme.dark_green },
-   GitGutterChange = { fg = theme.blue },
-   GitGutterDelete = { fg = theme.red },
-   GitGutterChangeDelete = { fg = theme.violet },
-
-   GitSignsAdd = { fg = theme.dark_green },
-   GitSignsChange = { fg = theme.blue },
-   GitSignsDelete = { fg = theme.red },
-   GitSignsAddNr = { fg = theme.dark_green },
-   GitSignsChangeNr = { fg = theme.blue },
-   GitSignsDeleteNr = { fg = theme.red },
-   GitSignsAddLn = { bg = theme.bg_popup },
-   GitSignsChangeLn = { bg = theme.bg_highlight },
-   GitSignsDeleteLn = { bg = theme.bg1 },
-
-   SignifySignAdd = { fg = theme.dark_green },
-   SignifySignChange = { fg = theme.blue },
-   SignifySignDelete = { fg = theme.red },
-
-   dbui_tables = { fg = theme.blue },
-
-   CursorWord = { bg = theme.base4, underline = true },
-
-   NvimTreeFolderName = { fg = theme.blue },
-   NvimTreeRootFolder = { fg = theme.red, bold = true },
-   NvimTreeSpecialFile = { fg = theme.fg, bg = theme.none },
-   NvimTreeGitDirty = { fg = theme.redwine },
-
-   TelescopeBorder = { fg = theme.teal },
-   TelescopePromptBorder = { fg = theme.blue },
-   TelescopeMatching = { fg = theme.teal },
-   TelescopeSelection = { fg = theme.yellow, bg = theme.bg_highlight, bold = true },
-   TelescopeSelectionCaret = { fg = theme.yellow },
-   TelescopeMultiSelection = { fg = theme.teal },
-
-   -- nvim v0.6.0+
-   DiagnosticSignError = { fg = theme.red },
-   DiagnosticSignWarn = { fg = theme.yellow },
-   DiagnosticSignInfo = { fg = theme.blue },
-   DiagnosticSignHint = { fg = theme.cyan },
-
-   DiagnosticError = { fg = theme.red },
-   DiagnosticWarn = { fg = theme.yellow },
-   DiagnosticInfo = { fg = theme.blue },
-   DiagnosticHint = { fg = theme.cyan },
-
-   LspReferenceRead = { bg = theme.bg_highlight, bold = true },
-   LspReferenceText = { bg = theme.bg_highlight, bold = true },
-   LspReferenceWrite = { bg = theme.bg_highlight, bold = true },
-
-   DiagnosticVirtualTextError = { fg = theme.red },
-   DiagnosticVirtualTextWarn = { fg = theme.yellow },
-   DiagnosticVirtualTextInfo = { fg = theme.blue },
-   DiagnosticVirtualTextHint = { fg = theme.cyan },
-
-   DiagnosticUnderlineError = { undercurl = true, sp = theme.red },
-   DiagnosticUnderlineWarn = { undercurl = true, sp = theme.yellow },
-   DiagnosticUnderlineInfo = { undercurl = true, sp = theme.blue },
-   DiagnosticUnderlineHint = { undercurl = true, sp = theme.cyan },
-
-   -- nvim-cmp
-   CmpItemAbbr = { fg = theme.fg },
-   CmpItemAbbrMatch = { fg = "#A6E22E" },
-   CmpItemMenu = { fg = theme.violet },
-   CmpItemKindVariable = { fg = theme.blue },
-   CmpItemKindFiled = { fg = theme.magenta },
-   CmpItemKindFunction = { fg = theme.yellow },
-   CmpItemKindClass = { fg = theme.orange },
-   CmpItemKindMethod = { fg = theme.teal },
-   CmpItemKindKeyWord = { fg = theme.red },
-   CmpItemKindText = { fg = theme.light_green },
-   CmpItemKindModule = { fg = theme.flatGreenColor4 },
-
-   -- Neogit
-   NeogitDiffAddHighlight = { fg = theme.green },
-   NeogitDiffDeleteHighlight = { fg = theme.red },
-   NeogitDiffContextHighlight = { fg = theme.blue },
-   NeogitHunkHeader = { fg = theme.fg },
-   NeogitHunkHeaderHighlight = { fg = theme.redwine },
 }
 
 local plugin_syntax = {
@@ -441,11 +324,11 @@ local set_hl = function(tbl)
    end
 end
 
--- async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function()
---    theme.terminal_color()
---    set_hl(plugin_syntax)
---    async_load_plugin:close()
--- end))
+async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function()
+   theme.terminal_color()
+   set_hl(plugin_syntax)
+   async_load_plugin:close()
+end))
 
 function theme.colorscheme()
    vim.api.nvim_command("hi clear")
@@ -455,7 +338,7 @@ function theme.colorscheme()
    vim.g.colors_name = "xcode-dark"
    set_hl(syntax)
    vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7487ce' })
-   -- async_load_plugin:send()
+   async_load_plugin:send()
 end
 
 theme.colorscheme()
