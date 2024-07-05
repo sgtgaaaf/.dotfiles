@@ -7,8 +7,8 @@ vim.g.netrw_liststyle = 0
 
 -- Define custom sign symbols for warnings and errors
 vim.o.termguicolors = true
-vim.o.signcolumn    = "yes"
--- vim.o.foldcolumn    = "auto:1"
+vim.o.signcolumn    = "yes:1"
+vim.o.foldcolumn    = "auto:1"
 
 opt.number          = true
 opt.relativenumber  = true

@@ -6,3 +6,4 @@ return { -- https://www.github.com/lukas-reineke/indent-blankline.nvim
       indent = { char = "▏" },
    },
 }
+

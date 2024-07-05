@@ -1,5 +1,4 @@
 return {
- {
     "karb94/neoscroll.nvim",
     config = function()
       require("neoscroll").setup({
@@ -9,6 +8,4 @@ return {
         cursor_scrolls_alone = true,
       })
     end,
-  },
-
 }

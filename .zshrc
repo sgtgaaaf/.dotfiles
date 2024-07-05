@@ -11,7 +11,7 @@ alias fetch='git fetch'
 alias status='git status'
 alias commit='git commit -m '
 alias mc='cd /mnt/c/Users/Sarthak.Ghimire/'
-alias zsc 'nvim ~/.zshrc'
+alias zc='nvim ~/.zshrc'
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
 
