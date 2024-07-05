@@ -7,7 +7,7 @@ vim.g.netrw_liststyle = 0
 
 -- Define custom sign symbols for warnings and errors
 vim.o.termguicolors = true
--- vim.o.signcolumn    = true
+vim.o.signcolumn    = "yes"
 -- vim.o.foldcolumn    = "auto:1"
 
 opt.number          = true
@@ -22,7 +22,7 @@ opt.background      = "dark"
 
 opt.wrap            = false
 
-opt.tabstop         = 03
+opt.tabstop         = 04
 opt.shiftwidth      = 03
 opt.scrolloff       = 12
 opt.cmdheight       = 00
