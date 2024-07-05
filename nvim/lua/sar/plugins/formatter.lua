@@ -6,6 +6,8 @@ return {
             lua = { "stylua" },
             java = { "prettier" },
             ts = { "prettier" },
+            xml = { "xmlformatter" },
+            md = { "markdownlint" },
          },
       })
       vim.keymap.set("n", "<leader>mp", function()

@@ -1,0 +1,3 @@
+-- statuscolumn
+	-- vim.cmd("set statuscolumn=%@SignCb@%s%=%T%@NumCb@%{v:lnum?}%r│%T")
+	-- l N   Line number.
