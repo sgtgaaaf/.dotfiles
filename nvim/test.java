@@ -2,7 +2,7 @@ import javax.swing.JFrame;
 // https://github.com/folke/
 
 @Deprecated
-class Sarthak {
+class Sarthak extends JFrame{
 
    private static final String JAPAN = "Japan";
    private JFrame frame;
@@ -14,13 +14,14 @@ class Sarthak {
    }
 
    // aslkjfdkl
-   public String getSomething() {
-      frame.setVisible(true);
+   public String getSomething(Boolean yon) {
+      frame.setVisible(yon);
       return null;
    }
 
    protected void ifStatement() {
       if (4 > 5) {
+         getSomething(true);
          return;
       } else {
          frame.dispose();

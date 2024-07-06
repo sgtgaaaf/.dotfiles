@@ -156,7 +156,7 @@ local syntax = {
    Function = { fg = theme.flatGreenColor4 },
    String = { fg = theme.Color1 },
    Character = { fg = theme.keywordPinkColor2, bold = true },
-   Constant = { fg = theme.whiteColor5 },
+   Constant = { fg = theme.lavanderColor9 },
    Macro = { fg = theme.flatGreenColor4 },
    -- Identifier = { fg = theme.blue },
 
@@ -184,7 +184,7 @@ local plugin_syntax = {
    ["@lsp.type.method"] = { fg = theme.flatGreenColor4 },
    ["@keyword"] = { fg = theme.keywordPinkColor2, bold = true },
    ["@property"] = { fg = theme.flatBlueColor7 },
-   ["@type"] = { fg = theme.keywordPinkColor2 },
+   ["@type"] = { fg = theme.classblue },
    ["@type.definition"] = { fg = theme.keywordPinkColor2 },
    ["@lsp.type.class"] = { fg = theme.classblue },
    ["@type.builtin"] = { fg = theme.keywordPinkColor2 },
@@ -271,12 +271,12 @@ local plugin_syntax = {
    TelescopeMultiSelection = { fg = theme.teal },
 
    -- nvim v0.6.0+
-   DiagnosticSignError = { fg = theme.red },
-   DiagnosticSignWarn = { fg = theme.yellow },
+   DiagnosticSignError = { fg = '#9e2927'  , bg = '#9e2927' },
+   DiagnosticSignWarn = { fg = '#bd9133'  , bg = '#bd9133' },
    DiagnosticSignInfo = { fg = theme.blue },
    DiagnosticSignHint = { fg = theme.cyan },
 
-   DiagnosticError = { fg = theme.red },
+   DiagnosticError = { fg = theme.black },
    DiagnosticWarn = { fg = theme.yellow },
    DiagnosticInfo = { fg = theme.blue },
    DiagnosticHint = { fg = theme.cyan },
@@ -284,14 +284,13 @@ local plugin_syntax = {
    LspReferenceRead = { bg = theme.bg_highlight, bold = true },
    LspReferenceText = { bg = theme.bg_highlight, bold = true },
    LspReferenceWrite = { bg = theme.bg_highlight, bold = true },
-
-   DiagnosticVirtualTextError = { fg = theme.red },
-   DiagnosticVirtualTextWarn = { fg = theme.yellow },
+   DiagnosticVirtualTextError = { fg =  "#9e2927" },
+   DiagnosticVirtualTextWarn = { fg = "#bd9133" },
    DiagnosticVirtualTextInfo = { fg = theme.blue },
    DiagnosticVirtualTextHint = { fg = theme.cyan },
 
-   DiagnosticUnderlineError = { undercurl = true, sp = theme.red },
-   DiagnosticUnderlineWarn = { undercurl = true, sp = theme.yellow },
+   DiagnosticUnderlineError = { undercurl = true, sp = "#9e2927", bold = true },
+   DiagnosticUnderlineWarn = { undercurl = false, bg = "#565246" },
    DiagnosticUnderlineInfo = { undercurl = true, sp = theme.blue },
    DiagnosticUnderlineHint = { undercurl = true, sp = theme.cyan },
 
@@ -337,11 +336,14 @@ function theme.colorscheme()
    vim.o.termguicolors = true
    vim.g.colors_name = "xcode-dark"
    set_hl(syntax)
-   vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7487ce' })
+   vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7487ce'})
+   vim.api.nvim_set_hl(0, 'Folded', { bg = "#3a3a3a"  })
+   vim.api.nvim_set_hl(0, 'FoldColumn', { fg = '#73797E', bg = "#3a3a3a" })
+   -- vim.cmd(":highlight Folded guibg=#3a3a3a guifg=none")
+   -- vim.cmd(":highlight FoldColumn guibg=#292a2f guifg=#73797E")
    async_load_plugin:send()
 end
 
 theme.colorscheme()
 
 return theme
-
