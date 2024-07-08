@@ -30,7 +30,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
    style = 'plain'
    background = 'transparent'
    foreground = '#6c6c6c'
-   template = '{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan> {{ if gt .Behind 0 }}↓{{ end }}{{ if gt .Ahead 0 }}↑{{ end }}</>'
+   template = '{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan> {{ if gt .Behind 0 }}↙{{ end }}{{ if gt .Ahead 0 }}↗{{ end }}</>'
 
    [blocks.segments.properties]
       branch_icon = '  '
