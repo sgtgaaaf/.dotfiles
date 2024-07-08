@@ -8,7 +8,7 @@ return { -- https://www.github.com/SmiteshP/nvim-navic
             preference = { "typescript-tools" },
          },
          click = true,
-         separator = " ᐳ ",
+         separator = " › ",
          depth_limit = 0,
          depth_limit_indicator = "..",
          icons = {
