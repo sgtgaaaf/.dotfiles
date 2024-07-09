@@ -136,7 +136,7 @@ local syntax = {
    PreCondit = { fg = theme.violet },
    Include = { fg = theme.violet },
    Define = { fg = theme.violet },
-   Conditional = { fg = theme.whiteColor5 },
+   Conditional = { fg = theme.keywordPinkColor2 },
    Repeat = { fg = theme.whiteColor5 },
    Keyword = { fg = theme.keywordPinkColor2, bold = true },
    Typedef = { fg = theme.keywordPinkColor2, bold = true },
@@ -158,7 +158,6 @@ local syntax = {
    Character = { fg = theme.keywordPinkColor2, bold = true },
    Constant = { fg = theme.lavanderColor9 },
    Macro = { fg = theme.flatGreenColor4 },
-   -- Identifier = { fg = theme.blue },
 
    Comment = { fg = "#6C7986" },
    SpecialComment = { fg = theme.Color10 },
@@ -189,12 +188,18 @@ local plugin_syntax = {
    ["@lsp.type.class"] = { fg = theme.classblue },
    ["@type.builtin"] = { fg = theme.keywordPinkColor2 },
    ["@type.builtin.void"] = { fg = theme.keywordPinkColor2 },
-   ["@variable"] = { fg = theme.whiteColor5 },
    ["@punctuation.bracket"] = { fg = theme.whiteColor5 },
    ["@attribute"] = { fg = theme.annotationLightColor3 },
+   ["@attribute.builtin"] = { fg = theme.annotationLightColor3 },
+   ["@variable"] = { fg = theme.whiteColor5 },
    ["@variable.parameter"] = { fg = theme.mediumGrayColor8 },
-   ["@variable.builtin"] = { fg = theme.keywordPinkColor2 },
-   ["@spell"] = { fg = theme.Color10 },
+   ["@variable.member"] = { fg = theme.flatBlueColor7 },
+   ["@variable.builtin"] = { fg = theme.keywordPinkColor2, bold = true },
+   ["@boolean"] = { fg = theme.keywordPinkColor2, bold = true },
+   ["@constructor"] = { fg = theme.annotationLightColor3 },
+   ["@constant.builtin"] = { fg = theme.keywordPinkColor2, bold = true },
+   ["@punctuation.delimiter"] = { fg = theme.whiteColor5, bold = false },
+   ["@spell"] = {sp = theme.flatGreenColor4, bg = theme.none, undercurl = true },
 
    vimCommentTitle = { fg = theme.grey, bold = true },
    vimLet = { fg = theme.orange },
@@ -271,8 +276,8 @@ local plugin_syntax = {
    TelescopeMultiSelection = { fg = theme.teal },
 
    -- nvim v0.6.0+
-   DiagnosticSignError = { fg = '#9e2927'  , bg = '#9e2927' },
-   DiagnosticSignWarn = { fg = '#bd9133'  , bg = '#bd9133' },
+   DiagnosticSignError = { fg = '#9e2927', bg = '#9e2927' },
+   DiagnosticSignWarn = { fg = '#bd9133', bg = '#bd9133' },
    DiagnosticSignInfo = { fg = theme.blue },
    DiagnosticSignHint = { fg = theme.cyan },
 
@@ -284,7 +289,7 @@ local plugin_syntax = {
    LspReferenceRead = { bg = theme.bg_highlight, bold = true },
    LspReferenceText = { bg = theme.bg_highlight, bold = true },
    LspReferenceWrite = { bg = theme.bg_highlight, bold = true },
-   DiagnosticVirtualTextError = { fg =  "#9e2927" },
+   DiagnosticVirtualTextError = { fg = "#9e2927" },
    DiagnosticVirtualTextWarn = { fg = "#bd9133" },
    DiagnosticVirtualTextInfo = { fg = theme.blue },
    DiagnosticVirtualTextHint = { fg = theme.cyan },
@@ -336,8 +341,8 @@ function theme.colorscheme()
    vim.o.termguicolors = true
    vim.g.colors_name = "xcode-dark"
    set_hl(syntax)
-   vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7487ce'})
-   vim.api.nvim_set_hl(0, 'Folded', { bg = "#3a3a3a"  })
+   vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7487ce' })
+   vim.api.nvim_set_hl(0, 'Folded', { bg = "#3a3a3a" })
    vim.api.nvim_set_hl(0, 'FoldColumn', { fg = '#73797E', bg = "#3a3a3a" })
    -- vim.cmd(":highlight Folded guibg=#3a3a3a guifg=none")
    -- vim.cmd(":highlight FoldColumn guibg=#292a2f guifg=#73797E")
