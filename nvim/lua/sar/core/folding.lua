@@ -1,5 +1,5 @@
 -- fold
-vim.cmd(":set foldmethod=indent")
+vim.cmd(":set foldmethod=syntax")
 -- vim.opt.foldmethod = "syntax"
 -- visuals
 vim.cmd(":highlight Folded guibg=#3a3a3a guifg=none")

@@ -4,6 +4,9 @@ local opt             = vim.opt
 
 vim.g.netrw_banner    = 0
 vim.g.netrw_liststyle = 0
+vim.g.netrw_bufsettings = "nonu nornu"
+
+-- help options
 
 -- Define custom sign symbols for warnings and errors
 vim.o.termguicolors = true

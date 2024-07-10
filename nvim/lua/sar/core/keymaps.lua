@@ -28,6 +28,16 @@ map.set("n", "<leader>o", "ciwtrue<esc>")
 map.set("n", "<leader>z", "ciwfalse<esc>")
 map.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+-- surround
+map.set("n", 'sa"', 'ea"<esc>bi"<esc>el')
+map.set("n", "sa'", "ea'<esc>bi'<esc>el")
+map.set("n", "sa[", "ea]<esc>bi[<esc>el")
+map.set("n", "sa]", "ea]<esc>bi[<esc>el")
+map.set("n", "sa{", "ea}<esc>bi{<esc>el")
+map.set("n", "sa}", "ea}<esc>bi{<esc>el")
+map.set("n", "sa(", "ea)<esc>bi(<esc>el")
+map.set("n", "sa)", "ea)<esc>bi(<esc>el")
+
 -- Copy to system clipboard
 map.set("n", "<leader>y", '"+y')
 map.set("v", "<leader>y", '"+y<esc>')
@@ -36,6 +46,7 @@ map.set("v", "<leader>y", '"+y<esc>')
 map.set("i", "`h", "<esc><S-i>")
 map.set("i", "`;", "<esc><s-a>;")
 map.set("i", "`o", "<esc>la")
+map.set("i", "`,", "<esc><s-a>,")
 
 -- SPLIT NAVIGATION
 map.set("n", "<c-h>","<c-w>h")
