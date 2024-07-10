@@ -1,13 +1,12 @@
 return {
    "nvim-treesitter/nvim-treesitter",
    config = function()
-      local status ,ts = pcall(require,"nvim-treesitter.configs") 
+      local status, ts = pcall(require, "nvim-treesitter.configs")
       if not status then
          return
       end
       ts.setup({
-         ensure_installed = { "java",  "javascript", "typescript", "c", "vim", "lua", "markdown", "toml", "json", "xml", "html" },
-         
+         ensure_installed = { "java", "javascript", "typescript", "c", "vim", "lua", "markdown", "toml", "json", "xml", "html" },
          auto_install = true,
          highlight = {
             enable = true
@@ -25,6 +24,9 @@ return {
          autotag = { enable = true },
          incremental_selection = { enable = true },
          indent = { enable = true },
+         modules = {},
+         sync_install = false,
+         ignore_install = {},
       })
    end
 }
