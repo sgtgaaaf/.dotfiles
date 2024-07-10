@@ -38,6 +38,20 @@ vnoremap J :m '>+1<cr>gv=gv
 vnoremap K :m '<-2<cr>gv=gv
 nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
 
+"surrounds
+nnoremap "" ea"<esc>bi"<esc>el
+nnoremap '' ea'<esc>bi'<esc>el
+nnoremap [] ea]<esc>bi[<esc>el
+nnoremap {} ea}<esc>bi{<esc>el
+nnoremap () ea)<esc>bi(<esc>el
+nnoremap <> ea><esc>bi<<esc>el
+vnoremap "" c"<esc>pa"<esc>
+vnoremap '' c'<esc>pa'<esc>
+vnoremap [] c[<esc>pa]<esc>
+vnoremap {} c{<esc>pa}<esc>
+vnoremap () c(<esc>pa)<esc>
+vnoremap <> c<<esc>pa><esc>
+
 inoremap `h <c-g><esc><S-i>
 inoremap `; <c-g><esc><s-a>;
 inoremap `o <c-g><esc>la
