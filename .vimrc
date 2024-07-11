@@ -37,6 +37,9 @@ nnoremap <leader>z ciwfalse<esc>
 vnoremap J :m '>+1<cr>gv=gv
 vnoremap K :m '<-2<cr>gv=gv
 nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
+nnoremap sl $v^
+nnoremap cl $v^y
+nnoremap tl $v^d
 
 "surrounds
 nnoremap "" ea"<esc>bi"<esc>el

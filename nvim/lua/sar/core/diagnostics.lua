@@ -10,9 +10,9 @@ vim.diagnostic.config({
          [vim.diagnostic.severity.ERROR] = '',
          [vim.diagnostic.severity.WARN] = '',
       },
-      -- linehl = {
-      --    [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
-      -- },
+      linehl = {
+         [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+      },
       -- virtual_text = {
       --    prefix = ' ●', -- Could be '●', '▎', 'x'
       --    underline = false,

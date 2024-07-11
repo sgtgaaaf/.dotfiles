@@ -27,11 +27,12 @@ opt.background          = "dark"
 opt.wrap                = false
 
 opt.tabstop             = 04
-opt.shiftwidth          = 03
+opt.softtabstop         = 04
+opt.shiftwidth          = 04
 opt.scrolloff           = 12
 opt.cmdheight           = 00
 
 opt.spelllang           = "en_gb"
--- opt.colorcolumn       = "120"
+-- opt.colorcolumn       = "120" tabstop
 
 opt.path:append("**")

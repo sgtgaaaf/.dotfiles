@@ -27,6 +27,9 @@ map.set('v','K',":m '<-2<CR>gv=gv")
 map.set("n", "<leader>o", "ciwtrue<esc>")
 map.set("n", "<leader>z", "ciwfalse<esc>")
 map.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+map.set("n", "cl", "$v^y")
+map.set("n", "sl", "$v^")
+map.set("n", "tl", "$v^d")
 
 -- [[[{"sur[rou]nd"}]]
 map.set("n", '""', 'ea"<esc>bi"<esc>el')
