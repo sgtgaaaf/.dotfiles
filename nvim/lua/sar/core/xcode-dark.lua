@@ -31,6 +31,7 @@ local theme = {
     Color11 = "#92A1B1",
 
     red = "#FC5FA3",
+    redErrrorrrr = "#e95678",
     redwine = "#d16d9e",
     orange = "#FF8700",
     structureblue = "#55bee0",
@@ -86,10 +87,10 @@ local syntax = {
     Search = { fg = theme.bg, bg = theme.orange },
     ColorColumn = { bg = theme.bg_highlight },
     Conceal = { fg = theme.green, bg = theme.none },
-    Cursor = { bg = theme.none, reverse = true },
-    vCursor = { bg = theme.none, reverse = true },
+    Cursor = { fg = "#000000", bg = theme.whiteColor5, reverse = false },
+    lCursor = { fg = "#000000", bg = theme.whiteColor5, reverse = false },
+    vCursor = { bg = theme.mediumGrayColor8, reverse = true },
     iCursor = { bg = theme.none, reverse = true },
-    lCursor = { bg = theme.none, reverse = true },
     CursorIM = { bg = theme.none, reverse = true },
     CursorColumn = { bg = theme.bg_highlight },
     CursorLine = { bg = "#23252B" },
@@ -102,7 +103,7 @@ local syntax = {
     DiffDelete = { fg = theme.black, bg = theme.red },
     DiffText = { fg = theme.black, bg = theme.fg },
     Directory = { fg = theme.fg, bg = theme.none },
-    ErrorMsg = { fg = theme.white, bg = theme.redwine, undercurl = false },
+    ErrorMsg = { bg = theme.none, fg = theme.redErrrorrrr, undercurl = false },
     WarningMsg = { fg = theme.yellow, bg = theme.none, bold = true },
     ModeMsg = { fg = theme.fg, bg = theme.none, bold = true },
     MatchParen = { fg = '#FFEF28', bg = '#383A60' },
@@ -352,6 +353,7 @@ function theme.colorscheme()
     vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7487ce' })
     vim.api.nvim_set_hl(0, 'Folded', { bg = "#3a3a3a" })
     vim.api.nvim_set_hl(0, 'FoldColumn', { fg = '#73797E', bg = "#3a3a3a" })
+    vim.api.nvim_set_hl(0, 'Cursor', { fg = '#000000', bg = "#FFFFFF" })
     -- vim.cmd(":highlight Folded guibg=#3a3a3a guifg=none")
     -- vim.cmd(":highlight FoldColumn guibg=#292a2f guifg=#73797E")
     async_load_plugin:send()
