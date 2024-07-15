@@ -20,5 +20,6 @@ title = "Let's Innovate"
 
 [font]
 normal.family = "JetBrainsMono NF"
+offset.y = 4 # for line spacing default is 0
 
 size = 16

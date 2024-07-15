@@ -4,6 +4,6 @@ return { -- https://www.github.com/lukas-reineke/indent-blankline.nvim
     main = "ibl",
     opts = {
         indent = { char = "▏" },
-        -- show_start = false, TODO
+        scope = { char = "▏", show_start = false, show_end = false },
     },
 }

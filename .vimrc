@@ -13,7 +13,9 @@ set colorcolumn=120
 set hlsearch
 
 filetype on
+syntax on
 filetype indent on
+colorscheme xcodedark
 
 let mapleader=' '
 

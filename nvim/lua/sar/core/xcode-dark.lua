@@ -125,7 +125,7 @@ local syntax = {
     SpellBad = { sp = theme.flatGreenColor4, bg = theme.none, undercurl = true },
     SpellCap = { fg = theme.blue, bg = theme.none, undercurl = true },
     SpellLocal = { fg = theme.flatGreenColor4, bg = theme.none, undercurl = true },
-    SpellRare = { fg = theme.violet, bg = theme.none, undercurl = true },
+    SpellRare = { fg = theme.violet, bg = theme.none, undercurl = false },
     Visual = { fg = theme.none, bg = theme.bg_visual },
     VisualNOS = { fg = theme.none, bg = theme.bg_visual },
     QuickFixLine = { fg = theme.violet, bold = true },
@@ -167,7 +167,7 @@ local syntax = {
     Todo = { fg = theme.Color11 },
     Delimiter = { fg = theme.fg },
     Ignore = { fg = theme.grey },
-    Underlined = { underline = true },
+    Underlined = { underline = false },
 
     DashboardShortCut = { fg = theme.magenta },
     DashboardHeader = { fg = theme.orange },
