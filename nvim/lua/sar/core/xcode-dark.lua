@@ -208,7 +208,7 @@ local plugin_syntax = {
     ["@tag.attribute"] = { fg = theme.annotationLightColor3, bold = false },
     ["@tag.delimiter"] = { fg = theme.keywordPinkColor2, bold = false },
     ["@string.special.url"] = { fg = theme.keywordPinkColor2, bold = false },
-    ["@spell"] = { sp = theme.flatGreenColor4, bg = theme.none, undercurl = true },
+    ["@spell"] = { sp = theme.flatGreenColor4, bg = theme.none, undercurl = false },
 
     vimCommentTitle = { fg = theme.grey, bold = true },
     vimLet = { fg = theme.orange },
@@ -304,9 +304,9 @@ local plugin_syntax = {
     DiagnosticVirtualTextHint = { fg = theme.cyan },
 
     DiagnosticUnderlineError = { undercurl = true, sp = "#9e2927", bold = true },
-    DiagnosticUnderlineWarn = { undercurl = false, bg = "#565246" },
-    DiagnosticUnderlineInfo = { undercurl = true, sp = theme.blue },
-    DiagnosticUnderlineHint = { undercurl = true, sp = theme.cyan },
+    DiagnosticUnderlineWarn = { undercurl = true, bg = "#565246" },
+    DiagnosticUnderlineInfo = { undercurl = false, sp = theme.blue },
+    DiagnosticUnderlineHint = { undercurl = false, sp = theme.cyan },
 
     -- nvim-cmp
     CmpItemAbbr = { fg = theme.fg },
