@@ -63,6 +63,6 @@ map.set("n", "<c-k>","<c-w>k")
 map.set("n", "<c-l>","<c-w>l")
 map.set("n", "<M-,>","<c-w>5<")
 map.set("n", "<M-.>","<c-w>5>")
-map.set("n", "<M-k>","<c-w>+")
-map.set("n", "<M-j>","<c-w>-")
+-- map.set("n", "<M-k>","<c-w>+")
+-- map.set("n", "<M-j>","<c-w>-")
 
