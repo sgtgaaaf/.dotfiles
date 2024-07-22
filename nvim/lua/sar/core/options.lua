@@ -33,6 +33,6 @@ opt.scrolloff           = 12
 opt.cmdheight           = 00
 
 opt.spelllang           = "en_gb"
--- opt.colorcolumn       = "120" tabstop
+opt.colorcolumn       = "120" 
 
 opt.path:append("**")
