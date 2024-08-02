@@ -30,6 +30,8 @@ map.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]
 map.set("n", "cl", "$v^y")
 map.set("n", "sl", "$v^")
 map.set("n", "tl", "$v^d")
+map.set("n", "<leader>ai", "ggVG=<c-o>")
+map.set("n", "<c-a>", 'ggVG"+y')
 
 -- [[[{"sur[rou]nd"}]]
 map.set("n", '""', 'ea"<esc>bi"<esc>el')
