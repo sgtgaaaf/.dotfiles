@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/sarthakghimire/InnovateEveryday/Sartix/src'
 let g:netrw_dirhist_7='/Users/sarthakghimire/.dotfiles/nvim/lua/sar/core'
 let g:netrw_dirhist_6='/Users/sarthakghimire/.dotfiles/nvim/lua/sar'
 let g:netrw_dirhist_5='/Users/sarthakghimire/.dotfiles/nvim/lua'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_2='/Users/sarthakghimire/InnovateEveryday/webscrapping'
 let g:netrw_dirhist_1='/Users/sarthakghimire/InnovateEveryday/webscraping'
 let g:netrw_dirhist_0='/Users/sarthakghimire/InnovateEveryday/webscrapping'
 let g:netrw_dirhist_9='/Users/sarthakghimire/InnovateEveryday/webscrapping/.settings'
-let g:netrw_dirhist_8='/Users/sarthakghimire/InnovateEveryday/webscrapping'
