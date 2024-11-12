@@ -9,7 +9,7 @@ TERM = "xterm-256color"
 padding.x = 11
 padding.y = 11
 
-# decorations = "Transparent"
+decorations = "None"
 
 opacity = 1.0
 blur = true
