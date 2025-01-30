@@ -31,7 +31,8 @@ Set-Alias em cdToEquipmentManagementFolder
 
 #Prompt
 #oh-my-posh init pwsh --config 'C:/Users/Sarthak.Ghimire/OneDrive - Stimwell Services Ltd/Documents/PowerShell/myprofile.omp.json' | Invoke-Expression
-oh-my-posh init pwsh --config 'C:/Users/Sarthak.Ghimire/.config/ohmyposh/zen.toml' | Invoke-Expression
+C:\Users\Sarthak.Ghimire\AppData\Local\Programs\oh-my-posh\bin\oh-my-posh.exe init pwsh --config 'C:/Users/Sarthak.Ghimire/.config/ohmyposh/zen.toml' | Invoke-Expression
+# oh-my-posh init pwsh --config 'C:/Users/Sarthak.Ghimire/.config/ohmyposh/zen.toml' | Invoke-Expression
 
 function cdToEquipmentManagementFolder {
     cd "~\Stimwell Services Ltd\Company - Iron Breeze\Equipment Management\2024\"

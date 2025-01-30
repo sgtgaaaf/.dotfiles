@@ -25,7 +25,7 @@ return { -- https://www.github.com/neovim/nvim-lspconfig
       require("lspconfig").jsonls.setup({})
       require("lspconfig").csharp_ls.setup({})
       require("lspconfig").pyright.setup({})
-      require("lspconfig").eslint_lsp.setup({})
+      --require("lspconfig").eslint_lsp.setup({})
       -- require("lspconfig").sonarlint.setup({})
 
       local map = vim.keymap
