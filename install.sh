@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 sudo apt update
 sudo apt upgrade
 sudo apt 
 
 cd ~
 
-=======
 #!/bin/bash
 # This script is not ready
 # Directory where your dotfiles are located
@@ -66,4 +64,3 @@ else
 fi
 
 echo "Symbolic links created successfully!"
->>>>>>> 4d850c565ccf33ae0bc3adb51f5c383d642c45cd

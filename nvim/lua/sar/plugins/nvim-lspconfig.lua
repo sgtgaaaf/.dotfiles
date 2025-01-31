@@ -25,12 +25,6 @@ return { -- https://www.github.com/neovim/nvim-lspconfig
       require("lspconfig").jsonls.setup({})
       require("lspconfig").csharp_ls.setup({})
       require("lspconfig").pyright.setup({})
-<<<<<<< HEAD
-      --require("lspconfig").eslint_lsp.setup({})
-=======
-      -- require("lspconfig").eslint_lsp.setup({}) --- this caused problems
->>>>>>> 4d850c565ccf33ae0bc3adb51f5c383d642c45cd
-      -- require("lspconfig").sonarlint.setup({})
 
       local map = vim.keymap
       -- Jump to the definition of the word under your cursor.
