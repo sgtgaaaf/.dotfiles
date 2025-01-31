@@ -1,0 +1,144 @@
+<ProceduresDB build='By Pedro Sousa, Wade Chafe, extracted by PROCIO 6a -Ian Mitchell'>
+    <Airport ICAOcode="VNKT">
+        <Sid Name="DARK1A" Runways="20">
+            <Sid_Waypoint ID="1">
+                <Name>KTM</Name>
+				<Type></Type>
+				<Latitude></Latitude>
+				<Longitude></Longitude>
+				<Speed>250</Speed>
+				<Altitude>4700</Altitude>
+				<AltitudeCons>0</AltitudeCons>
+				<AltitudeRestriction>at</AltitudeRestriction>
+				<Hdg_Crs>1</Hdg_Crs>
+				<Hdg_Crs_value>95</Hdg_Crs_value>
+				<DMEtoIntercept>01.5</DMEtoIntercept>
+				<Sp_Turn>Auto</Sp_Turn>
+			</Sid_Waypoint>
+            <Sid_Waypoint ID="2">
+                <Name>KTM</Name>
+				<Type></Type>
+				<Latitude></Latitude>
+				<Longitude></Longitude>
+				<Speed>250</Speed>
+				<Altitude>4700</Altitude>
+				<AltitudeCons>0</AltitudeCons>
+				<AltitudeRestriction>at</AltitudeRestriction>
+				<Hdg_Crs>1</Hdg_Crs>
+				<Hdg_Crs_value>95</Hdg_Crs_value>
+				<DMEtoIntercept>01.5</DMEtoIntercept>
+				<Sp_Turn>Auto</Sp_Turn>
+			</Sid_Waypoint>
+            <Sid_Waypoint ID="3">
+                <Name>KTM</Name>
+				<Type></Type>
+				<Latitude></Latitude>
+				<Longitude></Longitude>
+				<Speed>250</Speed>
+				<Altitude>4700</Altitude>
+				<AltitudeCons>0</AltitudeCons>
+				<AltitudeRestriction>at</AltitudeRestriction>
+				<Hdg_Crs>1</Hdg_Crs>
+
+				<Hdg_Crs_value>95</Hdg_Crs_value>
+				<DMEtoIntercept>01.5</DMEtoIntercept>
+				<Sp_Turn>Auto</Sp_Turn>
+			</Sid_Waypoint>
+            <Sid_Waypoint ID="3">
+                <Name>KTM</Name>
+				<Type></Type>
+				<Latitude></Latitude>
+				<Longitude></Longitude>
+				<Speed>250</Speed>
+				<Altitude>4700</Altitude>
+				<AltitudeCons>0</AltitudeCons>
+				<AltitudeRestriction>at</AltitudeRestriction>
+				<Hdg_Crs>1</Hdg_Crs>
+				<Hdg_Crs_value>95</Hdg_Crs_value>
+				<DMEtoIntercept>01.5</DMEtoIntercept>
+				<Sp_Turn>Auto</Sp_Turn>
+			</Sid_Waypoint>
+            <Sid_Waypoint ID="5">
+                <Name>KTM</Name>
+				<Type></Type>
+				<Latitude></Latitude>
+				<Longitude></Longitude>
+				<Speed>250</Speed>
+				<Altitude>4700</Altitude>
+				<AltitudeCons>0</AltitudeCons>
+				<AltitudeRestriction>at</AltitudeRestriction>
+				<Hdg_Crs>1</Hdg_Crs>
+				<Hdg_Crs_value>95</Hdg_Crs_value>
+				<DMEtoIntercept>01.5</DMEtoIntercept>
+				<Sp_Turn>Auto</Sp_Turn>
+			</Sid_Waypoint>
+        </Sid>
+        <Star Name="">
+            <Star_Waypoint ID="1">
+				<Name>BEG01</Name>
+				<Type>Normal</Type>
+				<Latitude>50.751313</Latitude>
+				<Longitude>-1.494686</Longitude>
+				<Speed>0</Speed>
+				<Altitude>18000</Altitude>
+				<AltitudeCons>0</AltitudeCons>
+				<AltitudeRestriction>at</AltitudeRestriction>
+            </Star_Waypoint>
+			<Star_Transition Name="ELDER">
+				<StarTr_Waypoint ID="1">
+					<Name>ELDER</Name>
+					<Type>Normal</Type>
+					<Latitude>50.663333</Latitude>
+					<Longitude>-1.337222</Longitude>
+					<Speed>0</Speed>
+					<Altitude>0</Altitude>
+					<AltitudeCons>0</AltitudeCons>
+					<AltitudeRestriction>at</AltitudeRestriction>
+				</StarTr_Waypoint>
+				<StarTr_Waypoint ID="2">
+					<Name>OLGUD</Name>
+					<Type>Normal</Type>
+					<Latitude>50.805556</Latitude>
+					<Longitude>-1.341111</Longitude>
+					<Speed>0</Speed>
+					<Altitude>0</Altitude>
+					<AltitudeCons>0</AltitudeCons>
+					<AltitudeRestriction>at</AltitudeRestriction>
+				</StarTr_Waypoint>
+				<StarTr_Waypoint ID="3">
+					<Name>TARAN</Name>
+					<Type>Normal</Type>
+					<Latitude>50.834444</Latitude>
+					<Longitude>-2.018611</Longitude>
+					<Speed>0</Speed>
+					<Altitude>0</Altitude>
+					<AltitudeCons>0</AltitudeCons>
+					<AltitudeRestriction>at</AltitudeRestriction>
+				</StarTr_Waypoint>
+				<StarTr_Waypoint ID="4">
+					<Name>BEWLI</Name>
+					<Type>Normal</Type>
+					<Latitude>50.745792</Latitude>
+					<Longitude>-1.819806</Longitude>
+					<Speed>0</Speed>
+					<Altitude>0</Altitude>
+					<AltitudeCons>0</AltitudeCons>
+					<AltitudeRestriction>at</AltitudeRestriction>
+				</StarTr_Waypoint>
+			</Star_Transition>
+        </Star>
+        <Approach Name"">
+			<App_Waypoint ID="1">
+				<Name>CI09L</Name>
+				<Type>Normal</Type>
+				<Latitude>51.477306</Latitude>
+				<Longitude>-0.690127</Longitude>
+				<Speed>0</Speed>
+				<Altitude>0</Altitude>
+				<AltitudeCons>0</AltitudeCons>
+				<AltitudeRestriction>at</AltitudeRestriction>
+			</App_Waypoint>
+        </Approach>
+    </Airport>
+</ProceduresDB>
+
