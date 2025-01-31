@@ -22,4 +22,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/node@20/bin:$PATH"
 export PATH="/usr/local/Cellar/w3m/0.5.3_8/bin:$PATH"
+<<<<<<< HEAD
 export PATH=$PATH:/usr/local/pgsql/bin
+=======
+export PATH="/usr/local/opt/postgresql@17/bin:$PATH"
+>>>>>>> 4d850c565ccf33ae0bc3adb51f5c383d642c45cd
