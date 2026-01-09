@@ -23,13 +23,9 @@ navic
 catppuccin
 dependencies
 SoA
-Phil
 HSEQ
 IMS
 certbreeze
-sar
-stimwell
-stimwellservices
 org
 junit
 bom
@@ -68,7 +64,5 @@ testType
 dateExpiry
 getDate
 offlineFlag
-ghimire
-sarthak
 CaSS
 TODO
